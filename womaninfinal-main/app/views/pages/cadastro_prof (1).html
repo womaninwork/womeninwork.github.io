@@ -3,153 +3,114 @@
   <head>
     <meta charset="UTF-8"/>
     <!--LINK CSS-->
-    <link rel="stylesheet" href="css/cadastro_prof.css"/>
+    <link rel="stylesheet" href="/womaninfinal-main/app/public/css/cadastro_prof (1).css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" />
-      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!--INICIO DO FORMULARIO DE CADASTRO-->
     <title>Formulário</title>
   </head>
   <body>
-    <section class="container">
-      <article class="header">
-        <nav class="logo">
-          <nav>
-              <a href="index.html">
-                  <img src="/public/imagem/imagens.tca/logo2.png" width="158px" height="60px">
-              </a>
-        <h2>Cadastre-se</h2>
-        <nav class="img">
-          <img src="/public/imagem/imagens.tca/home (1).jpeg" alt="" class="img">
-        </nav>
-          </nav>
-
-      <!--NOME DO USUARIO-->
-      <form action="/action_page.php" method="post" id="form" class="form" >
-        <section class="form-control">
-          <label for="username">Seu nome</label>
-          <input type="text" id="username" placeholder="Digite seu nome"/>
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </section>
-
-        <!--EMAIL DO USUARIO-->
-        <section class="form-control">
-          <label for="email">Seu email</label>
-          <input type="text" id="email" placeholder="Digite seu email" />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </section>
-
-        <!--CPF DO USUARIO-->
-        <form action="/action_page.php" method="post" id="form" class="form" >
-          <section class="form-control">
-            <label for="username">Seu CPF</label>
-            <input type="text" id="username" placeholder="Digite seu CPF"/>
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
-          </section>
-
-          <!--TELEFONE DO USUARIO-->
-          <form action="/action_page.php" method="post" id="form" class="form" >
-            <section class="form-control">
-              <label for="username">Seu Telefone</label>
-              <input type="text" id="username" placeholder="Digite seu telefone"/>
-              <i class="fas fa-exclamation-circle"></i>
-              <i class="fas fa-check-circle"></i>
-              <small>Mensagem de erro</small>
-            </section>
-
-          <!--GENERO DO USUARIO-->
-        <p>Selecione seu Gênero</p>
-        <input type="radio" id="feminino" name="genero" value="feminino" required>
-        <label for="feminino">Feminino</label>
-        <br>
-        <input type="radio" id="masculino" name="genero" value="masculino" required>
-        <label for="masculino">Masculino</label>
-        <br>
-        <input type="radio" id="outro" name="genero" value="outro" required>
-        <label for="outro">Outro</label>
-        <br><br>
-
-        <section class="form-control">
-        <label for="data_nascimento"><p>Data de Nascimento</p></label>
-        <input type="date" name="data_nascimento" id="data_nascimento" required>
-        </section>
-
-        <!--ESTADO DO USUARIO-->
-        <section class="form-control">
-            <label for="estado">Selecione seu Estado</label>
-                  <select id="estado" name="estado">
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="AC">Espírito Santo</option>
-                    <option value="AL">Goiás</option>
-                    <option value="AP">Maranhão</option>
-                    <option value="AM">Mato Grosso</option>
-                    <option value="BA">Mato Grosso do sul</option>
-                    <option value="CE">Minas Gerais</option>
-                    <option value="AC">Pará</option>
-                    <option value="AL">Pernambuco</option>
-                    <option value="AP">Piauí</option>
-                    <option value="AM">Rio de Janeiro</option>
-                    <option value="BA">Rio Grande do Norte</option>
-                    <option value="CE">Rio grande do Sul</option>
-                    <option value="AC">Rondônia</option>
-                    <option value="AL">Roraima</option>
-                    <option value="AP">Santa Catarina</option>
-                    <option value="AM">São Paulo</option>
-                    <option value="BA">Sergipe</option>
-                    <option value="CE">Tocantis</option>
-                  </select>
-                  </section>
-
-        <!--ENDEREÇO DO USUARIO-->
-        <section class="form-control">
-        <label for="email">Seu endereço</label>
-        <input type="text" id="endereco" placeholder="Digite seu endereço" />
-        <i class="fas fa-exclamation-circle"></i>
-        <i class="fas fa-check-circle"></i>
-        <small>Mensagem de erro</small>
-        </section>
-
-        <!--SENHA DO USUARIO-->
-        <section class="form-control">
-          <label for="password">Senha</label>
-          <input  type="password"  id="password" placeholder="Digite sua senha"/> 
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </section>
-
-        <!--CONFIRMAÇAO DE SENHA DO USUARIO-->
-        <section class="form-control">
-          <label for="password-confirmation">Confirme sua senha</label>
-          <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente"/>  
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </section>
-
-            <!--BOTAO DE ENVIAR-->
-            <button type="submit" href="index.html" >Enviar</button>
-            <a href="cadastro_prof (1).html"></a>
-      </form>
-    </section>
+    <section class="signin-area signin-one">
+      <div class="container">
+        <a href="index.html">
+          <img src="/womaninfinal-main/app/public/imagem/imagens.tca/logo2.png" width="158px" height="60px">
+      </a>
+      <h1>Cadastrar-se</h1>
+         <div class="row justify-content-center">
+            <div class="col-lg-5">
+               <form action="#">
+                  <div class="signin-form form-style-two rounded-buttons">
+                     <div class="row">
+                        
+                      <div class="col-md-12">
+                        <label for="validationServer01" class="form-label">Nome</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+                        <div class="valid-feedback">
+                          Perfeito!
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="validationServerUsername" class="form-label">Email</label>
+                          <div class="input-group has-validation">
+                            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                              Coloque seu e-mail
+                            </div>
+                          </div>
+                           <!-- form input -->
+                        </div>
+                      
+                           <!-- form input -->
+   
+                        <div class="col-md-12">
+                           <div class="form-input">
+                              <label>Password for your account</label>
+                              <div class="input-items default">
+                                 <input type="password" placeholder="Password" />
+                                 <i class="lni lni-key"></i>
+                              </div>
+                           </div>
+                           <!-- form input -->
+                        </div>
+                        <div class="col-md-6">
+                           <!-- form input -->
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-input rounded-buttons">
+                              <button
+                                 class="btn primary-btn-outline rounded-full"
+                                 type="submit"
+                                 >
+                                Cadastrar-se
+                              </button>
+                           </div>
+                           <!-- form input -->
+                        </div>
+                        <div class="col-md-12">
+                           <div class="form-input text-center">
+                              <p class="text">
+                                 By signing in you agree with the
+                                 <a href="javascript:void(0)">Terms and Conditions</a>
+                                 and
+                                 <a href="javascript:void(0)">Privacy</a>
+                              </p>
+                           </div>
+                           <!-- form input -->
+                        </div>
+                     </div>
+                  </div>
+                  <!-- signin form -->
+               </form>
+            </div>
+         </div>
+         <!-- row -->
+      </div>
+      <!-- container -->
+   </section>
 
     <!--LINKS JAVASCRIPT-->
     <script
       src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
-
-    <script src="Z:\WIW\cadastro_autônomo\form.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script>
+         (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Seleciona o formulário
+                let form = document.getElementById('validationForm');
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('is-validated');
+                }, false);
+            }, false);
+        })();
+      </script>
   </body>
 </html>

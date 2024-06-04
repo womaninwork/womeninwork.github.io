@@ -21,6 +21,18 @@
     text-align: center;
     font-size: 15px !important;
 }
+input{
+    height: 35px;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0px;
+}
+.modal-dialog{
+    width: 80vw;
+}
 
 .img-nav{
     border-radius: 100%;
@@ -38,8 +50,9 @@
 
 .img-profile{
    border-spacing: 26px;
-   max-width:200px;
-   max-height:150px;
+   height: 150px;
+   width: 150px;
+   border-radius: 100%;
 }
 
 .username{
@@ -102,4 +115,7 @@
 .card .card-img, .card-img-top{
     border-top-left-radius: 0rem !important;
     border-top-right-radius: 0rem !important;
+}
+.modal-body{
+    font-size: small;
 }

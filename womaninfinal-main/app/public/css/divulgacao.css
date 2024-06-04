@@ -23,21 +23,23 @@ body{
 section,footer{
     padding: 54px 0;
 }
+
 h1{
     font-size: 50px;
 }
 p{
     color: purple;
 }
-.container{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 5%;
+a:hover{
+    color: #D3606E;
+}
+.container2{
+    margin: 0;
 }
 .areas2_button{
     background-color: pink;
     color: white;
-    padding: 15px 20px;
+
     border-radius: 10px;
     cursor: pointer;
     display: inline-block;
@@ -53,8 +55,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 5px;
 }
 
 nav ul{
@@ -67,6 +67,10 @@ nav ul a{
     text-transform: uppercase;
     font-size: 14px;
     display: block;
+    text-decoration: none;
+}
+nav ul a:hover{
+    color: #D3606E;
 }
 nav ul a:not(.btn)::after{
     content: "";
@@ -133,6 +137,18 @@ nav .close-icon{
     text-align: center;
     font-family: sans-serif;
   }
+
+  .card-link {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+  
+  .card-link:hover {
+    color: #FFF;
+  }
   
   .card-titulo {
     font-size: 32px;
@@ -149,21 +165,24 @@ nav .close-icon{
   .card-footer {
     margin-top: 10px;
     text-align: center;
-    background-color: #D3606E;
+    background-color: #a32937;
   }
   
   .card-footer a {
     color: #fff;
     display: block;
-    padding: 16px;
     text-decoration: none;
     font-family: sans-serif;
     font-weight: 600;
   }
   
+  .card-footer a:hover {
+    color: #FFF;
+  }
+  
   /* Cores Cards */
   .card-1 .card-footer {
-    background-color: #D3606E;
+    background-color: #cc3f4f;
   }
   
   .card-1 .card-local {
@@ -171,15 +190,15 @@ nav .close-icon{
   }
   
   .card-2 .card-footer {
-    background-color: #D3606E;
+    background-color: #b10015;
   }
   
   .card-2 .card-local {
-    color: #d12761;
+    color: #81042d;
   }
   
   .card-3 .card-footer {
-    background-color: #D3606E;
+    background-color: #790411;
   }
   
   .card-3 .card-local {
@@ -197,7 +216,7 @@ nav .close-icon{
     margin: auto;
 }
 section {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     margin-top: 0% !important;
   }
   .main{
@@ -277,17 +296,7 @@ section {
     font-weight: 500;
     padding-top: 10px;
   }
-  .comment{
-    display: block;
-    align-items: center;
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-  }
-  .comment a{
-    font-weight: 500;
-    color: var(--text-color);
-    margin-right: 0.5rem;
-  }
+
   .hastag{
     color: var(--blue) ;
   }
@@ -324,8 +333,18 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.Depoimentos .cards-item{
+.btn{
+  background-color: rgb(174, 27, 51);
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+  display: inline-block;
+  transition: 0.1s;
+}
+.cards-item{
   background-color: lightpink;
   margin: 15px;
   border-radius: 14px;
@@ -339,6 +358,19 @@ section {
   width: 70px;
   display: block;
   margin: 10px auto;
+}
+
+.Depoimentos .cards-item .btn{
+  background-color: rgb(174, 27, 51);
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  width: 200px;
+  display: inline-block;
+  transition: 0.1s;
+  margin-bottom: 15px;
 }
 
 .Depoimentos .cards-item .nome_user{
@@ -371,6 +403,13 @@ section {
   margin-top: -5px;
 }
 
+.Depoimentos .cards-item:hover .card-footer{
+  background-color: #ca1c30 ;
+}
+
+.card-footer{
+  background-color: #ad183d;
+}
 .Depoimentos .cards-item:hover .nome_user,
 .Depoimentos .cards-item:hover .depoimento_user,
 .Depoimentos .cards-item:hover .estrela i{
@@ -387,9 +426,8 @@ section {
 .card-footer {
   margin-top: 10px;
   text-align: center;
-  background-color: #D3606E;
+  background-color: #8a1d2a;
   width: 150px;
-  right: 25px;
   border-radius: 100px;
   margin: auto;
 }
@@ -397,30 +435,10 @@ section {
 .card-footer a {
   color: #fff;
   display: block;
-  padding: 16px;
   text-decoration: none;
   font-family: sans-serif;
   font-weight: 300;
   
-}
-
-  .footer{
-    background-color: #887EFF;
-    text-align: center;
-}
-
-.footer i{
-    color: #887EFF;
-    font-size: 19px;
-    background-color: white;
-    padding: 10px;
-    margin: 3px;
-    border-radius: 10px;
-}
-
-.footer p{
-    margin-top: 10px;
-    color: white;
 }
   /* Making Responsive */
   @media(max-width:830px){
@@ -474,3 +492,312 @@ section {
       width: 100%;
   }
   }
+  
+.footer{
+  background-color: #887EFF;
+  text-align: center;
+}
+
+.footer i{
+  color: #887EFF;
+  font-size: 19px;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.footer p{
+  margin-top: 10px;
+  color: white;
+}
+
+.heart-container {
+  --heart-color: rgb(212, 3, 3);
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transition: .3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment-perfil img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.comment-perfil2 img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.heart-container .svg-outline,
+        .heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+.action-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  --color: rgb(129, 6, 118);
+  --size: 30px;
+  display: flex;
+  justify-content:end;
+  align-items:end;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--size);
+  user-select: none;
+  fill: var(--color);
+}
+
+.container .save-regular {
+  position: absolute;
+  animation: keyframes-fill .5s;
+  transform-origin: top;
+}
+
+.container .save-solid {
+  position: absolute;
+  animation: keyframes-fill .5s;
+  display: none;
+  transform-origin: top;
+}
+
+/* ------ On check event ------ */
+.container input:checked ~ .save-regular {
+  display: none;
+}
+
+.container input:checked ~ .save-solid {
+  display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scaleY(1.2);
+  }
+}
+.button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  background: #f2295b;
+  color: white;
+  padding: 0.25em 0;
+  font-size: 17px;
+  border: none;
+  border-radius: 0.7em;
+  letter-spacing: 0.08em;
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 2em;
+  padding-left: 3em;
+  padding-right: 0.5em;
+}
+
+.button .icon {
+  background: #fff;
+  margin-right: 1em;
+  height: 1.6em;
+  width: 1.6em;
+  border-radius: 0.5em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0.2em;
+  transition: all .7s;
+  gap: 10px;
+}
+
+.shere {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.button:hover .icon {
+  width: calc(100% - 0.6rem);
+}
+
+.button:hover .shere {
+  width: calc(100% - 0.6rem);
+  display: none;
+}
+
+.button .icon-shere {
+  color: #f2295b;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
+
+.button:hover .icon .icon-shere {
+  display: flex;
+}
+
+
+.comment {
+  position: relative;
+  margin: 20px auto;
+}
+.comment-heading {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 14px;
+}
+.comment-voting {
+  width: 20px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.comment-voting button {
+  display: block;
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  border: 0;
+  font-size: 10px;
+}
+.comment-info {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+}
+.comment-author {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: bold;
+  text-decoration: none;
+}
+.comment-author:hover {
+  text-decoration: underline;
+}
+.replies {
+  margin-left: 20px;
+}
+
+/* Adjustments for the comment border links */
+
+.comment-border-link {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 12px;
+  height: calc(100% - 50px);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+.comment-border-link:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.comment-body {
+  padding: 0 20px;
+  padding-left: 28px;
+}
+.replies {
+  margin-left: 28px;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
