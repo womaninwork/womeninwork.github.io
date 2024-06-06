@@ -33,6 +33,12 @@ p{
 a:hover{
     color: #D3606E;
 }
+
+.name-location1 a{
+  color: black;
+}
+
+
 .container2{
     margin: 0;
 }
@@ -731,9 +737,8 @@ section {
 }
 
 
-.comment {
-  position: relative;
-  margin: 20px auto;
+.comment a{
+   color: black;
 }
 .comment-heading {
   display: flex;

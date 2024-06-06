@@ -286,7 +286,7 @@ section {
   }
   .comment a{
     font-weight: 500;
-    color: var(--text-color);
+    color: black;
     margin-right: 0.5rem;
   }
   .hastag{
